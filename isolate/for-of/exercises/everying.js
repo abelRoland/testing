@@ -9,9 +9,9 @@ const assert = chai.assert;
 const containsNoNumbers = (arr) => {
   if (!Array.isArray(arr)) { throw new TypeError('arr'); }
 
-  let noNumbers = _;
-  for (let _ of _) {
-
+  let noNumbers = true;
+  for (let numbers of noNumbers ) {
+    noNumbers = noNumbers && typeof numbers !== 'number';
   }
 
   return noNumbers;

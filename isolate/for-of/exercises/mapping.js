@@ -10,8 +10,9 @@ const mapToNumber = (arr) => {
   if (!Array.isArray(arr)) { throw new TypeError('arr'); }
 
   const numberValues = [];
-  for (let _ of _) {
-
+  for (let numbers of numberValues) {
+    const casting = Number(numbers);
+    numberValues.push(casting);
   }
 
   return numberValues;
