@@ -9,7 +9,7 @@ const deepCompare = (actual, expect) => actual === expect || Object.is(actual, e
  * @param {any} val - the value to convert
  * @returns {string} "truey" or "falsey"
  */
-const truthiness = _;
+const truthiness = (val) => Boolean(val) + 'y';
 
 // this works! no need to change it
 const map = (arr, callback) => {

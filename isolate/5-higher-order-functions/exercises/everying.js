@@ -7,8 +7,7 @@
  * @param {any} val
  * @returns {boolean}
  */
-const isFalsy = _;
-
+const isFalsy = (val) => (Boolean(val) === false);
 
 // this works!  no need to change it
 const every = (arr, callback) => {
@@ -44,4 +43,3 @@ const _4_expect = false;
 const _4_actual = every(['', 0, 'hello', null, false], isFalsy);
 const _4_test = _4_actual === _4_expect;
 console.assert(_4_test, 'Test 4');
-

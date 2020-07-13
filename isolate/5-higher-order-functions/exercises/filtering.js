@@ -9,8 +9,7 @@ const deepCompare = (actual, expect) => actual === expect || Object.is(actual, e
  * @param {string} str - string to check for "!"
  * @returns {boolean} if str contains "!" or not
  */
-const isEnthusiastic = _;
-
+const isEnthusiastic = (val) => val.includes('!');
 
 // this works!  no need to change it
 const filter = (arr, callback) => {
