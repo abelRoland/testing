@@ -15,8 +15,8 @@ const firstNegativeNumber = (arr) => {
 
   // fill in the array methods and pass the correct logic
   const negativeNumber = arr
-    ._(_)
-    ._(_);
+    .filter(isNumber)
+    .find(isNegative);
 
   return negativeNumber;
 };

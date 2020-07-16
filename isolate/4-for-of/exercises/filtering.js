@@ -12,15 +12,10 @@ const filterOutStrings = (arr) => {
   if (!Array.isArray(arr)) { throw new TypeError('arr'); }
 
   const noStrings = [];
-<<<<<<< HEAD:isolate/for-of/exercises/filtering.js
-  for (let strings of noStrings) {
-    if (typeof strings === 'string') {
-      noStrings.pop(strings);
+  for (let strings of arr) {
+    if (typeof strings !== 'string') {
+      noStrings.push(strings);
     }
-=======
-  for (const _ of _) {
-
->>>>>>> c5a084fb3d0746c459bedb7b1389435eb7c84ef8:isolate/4-for-of/exercises/filtering.js
   }
 
   return noStrings;

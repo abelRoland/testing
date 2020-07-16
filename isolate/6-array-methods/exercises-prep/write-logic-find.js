@@ -8,7 +8,7 @@ const assert = chai.assert;
  * @param {string} str - the string
  * @returns {boolean} is it excited?
  */
-const isExcited = (str) => _;
+const isExcited = (str) => str.includes('!'); 
 
 describe('isExcited: determines if a string is excited or not', () => {
   describe('can be used on its own', () => {

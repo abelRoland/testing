@@ -12,14 +12,9 @@ const mapToNumber = (arr) => {
   if (!Array.isArray(arr)) { throw new TypeError('arr'); }
 
   const numberValues = [];
-<<<<<<< HEAD:isolate/for-of/exercises/mapping.js
-  for (let numbers of numberValues) {
+  for (let numbers of arr) {
     const casting = Number(numbers);
     numberValues.push(casting);
-=======
-  for (const _ of _) {
-
->>>>>>> c5a084fb3d0746c459bedb7b1389435eb7c84ef8:isolate/4-for-of/exercises/mapping.js
   }
 
   return numberValues;

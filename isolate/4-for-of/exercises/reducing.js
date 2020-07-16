@@ -11,15 +11,9 @@ const assert = chai.assert;
 const concatenateAsStrings = (arr) => {
   if (!Array.isArray(arr)) { throw new TypeError('arr'); }
 
-<<<<<<< HEAD:isolate/for-of/exercises/reducing.js
   let concatenated = '';
   for (let value of arr) {
     concatenated += String(value);
-=======
-  let concatenated = _;
-  for (const _ of _) {
-
->>>>>>> c5a084fb3d0746c459bedb7b1389435eb7c84ef8:isolate/4-for-of/exercises/reducing.js
   }
 
   return concatenated;

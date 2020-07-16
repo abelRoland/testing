@@ -11,15 +11,9 @@ const assert = chai.assert;
 const containsNoNumbers = (arr) => {
   if (!Array.isArray(arr)) { throw new TypeError('arr'); }
 
-<<<<<<< HEAD:isolate/for-of/exercises/everying.js
   let noNumbers = true;
-  for (let numbers of noNumbers ) {
+  for (let numbers of arr ) {
     noNumbers = noNumbers && typeof numbers !== 'number';
-=======
-  let noNumbers = _;
-  for (const _ of _) {
-
->>>>>>> c5a084fb3d0746c459bedb7b1389435eb7c84ef8:isolate/4-for-of/exercises/everying.js
   }
 
   return noNumbers;

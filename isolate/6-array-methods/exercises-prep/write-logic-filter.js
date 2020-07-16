@@ -8,7 +8,7 @@ const assert = chai.assert;
  * @param {string} str - the string to check
  * @returns {boolean} is the string longer than 5?
  */
-const longerThanFive = (str) => _;
+const longerThanFive = (str) => str.length > 5;
 
 
 describe('longerThanFive: determines if a string is longer than 5 characters', () => {
