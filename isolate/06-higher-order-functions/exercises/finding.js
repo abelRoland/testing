@@ -7,13 +7,7 @@
  * @param {string} str - the string to check for enthusiasm
  * @returns {boolean}
  */
-<<<<<<< HEAD:isolate/5-higher-order-functions/exercises/finding.js
 const isCurious = (val) => val.includes('?');
-=======
-const isCurious = (_) => {
-  return _;
-};
->>>>>>> 159bd5ee5534fd7941e4277f97b2f7907b6a3625:isolate/06-higher-order-functions/exercises/finding.js
 
 // this works! no need to change it
 const find = (arr, callback) => {

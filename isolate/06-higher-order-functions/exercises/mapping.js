@@ -9,13 +9,7 @@ const deepCompare = (actual, expect) => actual === expect || Object.is(actual, e
  * @param {any} val - the value to convert
  * @returns {string} "truey" or "falsey"
  */
-<<<<<<< HEAD:isolate/5-higher-order-functions/exercises/mapping.js
 const truthiness = (val) => Boolean(val) + 'y';
-=======
-const truthiness = (_) => {
-  return _;
-};
->>>>>>> 159bd5ee5534fd7941e4277f97b2f7907b6a3625:isolate/06-higher-order-functions/exercises/mapping.js
 
 // this works! no need to change it
 const map = (arr, callback) => {

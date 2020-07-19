@@ -9,14 +9,7 @@
  * @param {any} val
  * @returns {boolean}
  */
-<<<<<<< HEAD:isolate/5-higher-order-functions/exercises/everying.js
 const isFalsy = (val) => (Boolean(val) === false);
-=======
-const isFalsy = (_) => {
-
-};
-
->>>>>>> 159bd5ee5534fd7941e4277f97b2f7907b6a3625:isolate/06-higher-order-functions/exercises/everying.js
 
 // this works!  no need to change it
 const every = (arr, callback) => {

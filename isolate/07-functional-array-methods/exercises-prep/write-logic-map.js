@@ -7,13 +7,7 @@ const assert = chai.assert;
  * @param {string} str - the string to reverse
  * @returns {string} the string, reversed
  */
-<<<<<<< HEAD:isolate/6-array-methods/exercises-prep/write-logic-map.js
 const reverseString = (str) => str.split("").reverse().join('');;
-=======
-const reverseString = (str) => {
-  return _;
-};
->>>>>>> 159bd5ee5534fd7941e4277f97b2f7907b6a3625:isolate/07-functional-array-methods/exercises-prep/write-logic-map.js
 
 
 describe('reverseString: reverses a string', () => {
