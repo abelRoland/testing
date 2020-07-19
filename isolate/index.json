@@ -405,6 +405,7 @@
       ]
     },
     {
+<<<<<<< HEAD
       "path": "/1-reference-vs-value",
       "dirs": [
         {
@@ -419,6 +420,9 @@
     },
     {
       "path": "/10-object-transformations",
+=======
+      "path": "/extra-object-transformations",
+>>>>>>> 4d6e5d431197adabb48f690664bf9533b9e9dd58
       "dirs": [
         {
           "path": "/examples",
