@@ -29,9 +29,18 @@
      // 1. A user can see all numbers listed in an alert
      const displayNumbersHandler = (arrayOfNumbers = numbers, message = 'all numbers:') => {
       debugger;
+<<<<<<< HEAD
       const joinNumbers = (acc, next) => `${acc}\n${String(next)}`;
       const allNumbersListed = arrayOfNumbers.reduce(joinNumbers, '');
       alert(`${message}${allNumbersListed}`);
+=======
+      const joinNumbers = (acc, next) => {
+        return _;
+      };
+      const allNumbersListed = arrayOfNumbers
+        ._(joinNumbers, _);
+      alert(`${message}: ${allNumbersListed}`);
+>>>>>>> 159bd5ee5534fd7941e4277f97b2f7907b6a3625
     };
 
     // 2. A user can fill the array with as many numbers as they like
