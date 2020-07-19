@@ -7,11 +7,11 @@ describe('computed properties', () => {
     const wet = 'soup';
     const dry = 'bread';
     const obj = {
-      [_]: 'wet',
-      _: _
+      ['soup']: 'wet',
+      ['dry']: 'dry'
     };
     expect(obj.soup).to.eql('wet');
-    expect(obj.dry).to.eql(_);
+    expect(obj.dry).to.eql('bread');
   });
   it('a menagerie', () => {
     const swimming = 'mackerel';
