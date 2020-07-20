@@ -9,13 +9,13 @@ const assert = chai.assert;
  */
 const allEntriesDefined = (obj) => {
 
-  let allAreDefined = _;
-  for (const _ in _) {
-    const value = _;
-    const valueIsDefined = _;
-    allAreDefined = _ && _;
+  // still needs some fixing
+  let allAreDefined = true;
+  for (const key in obj) {
+    const value = String(obj[key]);
+    const valueIsDefined = (typeof obj[key] !== 'undefined');
+    allAreDefined = Boolean(valueIsDefined && allAreDefined);
   }
-
   return allAreDefined;
 };
 

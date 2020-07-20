@@ -9,22 +9,23 @@ const assert = chai.assert;
  */
 const keepTruthyEntries = (obj) => {
 
-  const objEntries = Object._(_);
+  const objEntries = Object.entries(obj);
   const truthyEntries = objEntries
-    ._(entry => {
-      const value = _;
-      return _;
+    .filter(entry => {
+      const value = entry[1];
+      return Boolean(value) == true;
     })
   const truthyObject = truthyEntries
-    ._((newObj, entry) => {
-      const key = _;
-      const value = _;
-      _;
-      return newObj;
-    }, _);
+    .reduce((newObj, entry) => {
+    const key = entry[0];
+    const value = entry[1];
+    newObj[key] = value;
+    return newObj;
+    }, {});
 
   return truthyObject;
 };
+
 
 
 describe('keepTruthyEntries keeps all the truthy entries', () => {
